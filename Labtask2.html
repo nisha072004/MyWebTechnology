@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satellite Webpage</title>
+</head>
+
+<body>
+    <h1 style="background-color: lightseagreen;color: black;">Satellite tracker</h1>
+    <p><b>Live position lookup for orbiting objects. Data refreshes every 5 seconds.</b></p>
+    <hr>
+    <img src="Space Satellite Orbiting Earth Vector.jfif" width="400" height="200">
+     <h2 style="color:brown;">Search a Satellite</h2>
+     <form action="/action.php" method="post">
+
+    <fieldset>
+
+        <legend>Satellite Information:</legend>
+        <label for="fname">Satellite name:</label>
+        <input type="text" name="fname" id="fname" required>
+        <br><br>
+        <label for="id">NORAD ID:</label>
+        <input type="tel" name="id" id="id" required>
+        <br><br>
+        <button style="background-color: lightskyblue;color: black;" type="submit">Track</button>
+        
+        </fieldset>
+    </form>
+    <br>
+    <hr>
+    <h1 style="background-color: blueviolet;color: azure;">Live ground track:</h1>
+    <iframe src= "https://eyes.nasa.gov/apps/earth" width="1000" height="500">Map</iframe>
+    <hr>
+    <h2 style="color: green;">Tracked Satellites:</h2>
+    
+    <table style="background-color: brown;border: 3px;">
+        <tbody>
+            <tr style="background-color: lightskyblue;">
+                <th width="200px ">Name</th>
+                <th width="200px ">Altitude</th>
+                <th width="200px ">Velocity</th>
+                <th width="200px ">Status</th>
+            </tr>
+        <tr style="background-color: lightgrey;">
+            <td>
+                <i>ISS (ZARYA)</i>
+            </td>
+            <td>408 km</td>
+            <td>7.66 km/s</td>
+            <td>In orbit</td>
+        </tr>
+        <tr style="background-color: aquamarine;">
+            <td>
+                <i>HUBBLE</i>
+            </td>
+            <td>535 km</td>
+            <td>7.59 km/s</td>
+            <td>In orbit</td>
+        </tr>
+        <tr style="background-color: lightgrey;">
+            <td>
+                <i>STARLINK-1130</i>
+            </td>
+            <td>550 km</td>
+            <td>7.58 km/s</td>
+            <td>Decaying</td>
+        </tr>
+        </tbody>
+    </table>
+    <br>
+    <hr>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8WyLIc9Tskl2TUmsQf4K3dZ7uXlNCdjm34p5C9hYGi3tL18r9W1N7RKFI&s=10" width="200" height="100">
+    <img src="https://i0.wp.com/spacenews.com/wp-content/uploads/2014/11/HubbleST_NASA4X3.jpg?fit=704%2C527&ssl=1" width="100" height="100">
+    <img src="https://cdn-sw.spidersweb.pl/2021/11/kuiper.webp" width="200" height="100">
+    <br>
+    <h2 style="background-color: blueviolet;">Orbit Facts</h2>
+    <p><b>A typical low-earth orbit Satellite circles at roughly 10<sup>4</sup> meters per second, 
+        completing one full orbit in under 2 hours.
+        Atmospheric drag at this altitude is about 
+        10<sub>-6</sub> N/m<sup>2</sup>small but enough 
+        to cause gradual decay</b></p>
+    <br>
+    <ul>
+        <li>Low Earth Orbit (LEO): 160 - 2,000 km</li>
+        <li>Medium Earth Orbit (MEO): 2,000-35,786 km</li>
+        <li>Geostationary Orbit (GEO): 35,786 km</li>
+
+    </ul>
+    <br>
+    <ol>
+        <li>Enter satellite name or NORAD ID</li>
+        <li>Press Track to fetch live coordinates</li>
+        <li>View position on the ground track map</li>
+    </ol>
+    <br>
+    <hr>
+    <h2 style="color: blueviolet;">Raw telemetry</h2>
+    <pre>LAT: 27.9881
+LON: -15.4131
+ALT: 408.2 km
+VEL: 7.66 km/s
+    </pre>
+    <hr>
+    <fieldset>
+        <legend>Display options</legend>
+        <label>
+            <input type="checkbox" name="orbitpath">
+            Show orbit path
+        </label>
+    </fieldset>
+    <br>
+    <p>Data sourced from
+    <a href="http://www.n2yo.com" target="_blank">N2YO</a>
+    and
+    <a href="http://celestrak.org" target="_blank">CelesTrak</a>
+    .
+</p>
+<footer>
+    <span> @ 2026 Satellite tracker</span>
+    <span>Built by Me</span>
+
+</footer>
+    
+</body>
+</html>
