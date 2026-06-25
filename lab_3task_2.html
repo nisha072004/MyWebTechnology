@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Job Application</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fname">1.Full Name:</label>
+            <input type="text" id="fname" name="fname" required placeholder="Enter your full name">
+            <br><br>
+            <label for="number">2.National ID Number:</label>
+            <input type="number" id="number" name="number" required>
+            <br><br>
+            <label for="email">3.Email Address:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+            <label for="phone">4. Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <br><br>
+            <label for="date">5.Date Of Birth:</label>
+            <input type="date" id="date" name="date" required>
+            <br><br>
+            <label for="gender"> 6.Gender:</label>
+            <input type="radio" id="gender" name="gender" required>male
+            <input type="radio" id="gender" name="gender" required>female
+            <input type="radio" id="gender" name="gender" required>other
+
+            <br><br>
+            <label for="job information">7.Job Information:</label>
+            <input type="checkbox" id="job information" name="job information" required>Software Developer
+            <input type="checkbox" id="job information" name="job information" required>Web Designer
+            <input type="checkbox" id="job information" name="job information" required>Network Engineer
+            <input type="checkbox" id="job information" name="job information" required>Database Administrator
+            <input type="checkbox" id="job information" name="job information" required> IT Support Officer
+
+            <br><br>
+            <label for="experience level">8. Experience Level:</label>
+            <input type="checkbox" id="experience level" name="experience level" required> Fresher
+            <input type="checkbox" id=" experience level" name=" experience level" required> 1-2 years
+            <input type="checkbox" id="experience level " name=" experience level" required> 3-5 years
+            <input type="checkbox" id=" experience level" name="experience level " required> More than 5 years
+            <br><br>
+            <label for="skill">9.Select Technical Skills:</label>
+            <select id="skill " name=" skill ">
+                <option value="HTML"  selected> HTML</option>
+                <option value=" CSS">CSS </option>
+                <option value="JAVAScript">JAVAScript </option>
+                <option value="Python">PYTHON  </option>
+                <option value="SQL">SQL  </option>
+                
+
+            </select>
+            <br><br>
+
+            <legend><b>Educational Information:</b></legend>
+            <br>
+
+            <label for="hqualification">10.Highest Qualification:</label>
+            <input type="text" id="hqualification" name="hqualification" required>
+            <br><br>
+            <label for="uname">11. University/College Name:</label>
+            <input type="text" id=" uname" name="uname" required>
+            <br><br>
+            <label for="gyear">12.Graduation Year :</label>
+            <input type="text" id=" gyear" name=" gyear" required>
+            <br><br>
+            <legend><b> Additional Information:</b></legend>
+            <br>
+
+              <label for="file">13.Upload Resume/CV:</label>
+            <input type="file" id="file" name="file" required>
+            <br><br>
+              <label for="file"> 14.Cover Letter:</label>
+            <input type="file" id="file" name="file" required>
+            <br><br>
+            <label for="address">15.Current Address:</label>
+            <textarea id="address" maxlength="200"></textarea>
+
+            <br><br>
+             <input type="submit" value="Reset">
+             <button>Submit</button>
+
+            
+
+            </fieldset>
+    </form>
+</body>
+</html>
